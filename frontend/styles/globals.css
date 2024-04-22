@@ -3,31 +3,43 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    @apply bg-white text-secondary;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    .text-balance {
+        text-wrap: balance;
+    }
 }
+
+/* navbar toogle button */
+.nav-toggle {
+    @apply w-10 h-10 border border-secondary rounded flex justify-center items-center p-1;
+}
+
+.nav-toggle span {
+    @apply relative h-[2px] w-full bg-secondary;
+}
+.nav-toggle span::before,
+.nav-toggle span::after {
+    content: "";
+    @apply block absolute left-0 h-[2px] w-full bg-secondary transition-all duration-300;
+}
+.nav-toggle span::before {
+    @apply -top-2;
+}
+
+.nav-toggle span::after {
+    @apply top-2;
+}
+/* when active */
+.nav-toggle.show span {
+    @apply bg-transparent;
+}
+.nav-toggle.show span::before {
+    transform: rotate(135deg) translate(6px, -6px);
+}
+.nav-toggle.show span::after {
+    transform: rotate(-135deg) translate(6px, 6px);
+}
+/* end of navbar toogle button */
