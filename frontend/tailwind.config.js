@@ -28,7 +28,7 @@ module.exports = {
             lg: "64.631rem",
             xl: "80rem",
             "2xl": "64.938rem", // 1039px
-            "feegor-max": "39.875rem",
+            "next-max": "69.375rem",
         },
         extend: {
             boxShadow: {
