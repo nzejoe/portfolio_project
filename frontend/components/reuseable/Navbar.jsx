@@ -30,17 +30,23 @@ const Navbar = () => {
                 <div className="">
                     <h5>EcoMarket</h5>
                 </div>
-                <div className="">
-                    <button className={`nav-toggle ${toggle ? "show" : ""}`} onClick={onToggle}>
+                <div className="xl:flex-1">
+                    <button className={`nav-toggle ${toggle ? "show" : ""} xl:hidden`} onClick={onToggle}>
                         <span className=""></span>
                     </button>
-                    <ul className="fixed w-full h-full -right-full top-0">
-                        {navItems.map((item, idx) => (
-                            <li key={item.id}>{item.label}</li>
-                        ))}
-                    </ul>
+                    <div
+                        className={`fixed w-full h-full transition-all top-0 ${
+                            toggle ? "right-0" : "-right-full"
+                        } flex justify-center items-center bg-primary xl:static xl:justify-between xl:h-max xl:bg-inherit xl:max`}
+                    >
+                        <ul className="xl:flex xl:space-x-10">
+                            {navItems.map((item, idx) => (
+                                <li key={item.id}>{item.label}</li>
+                            ))}
+                        </ul>
+                        <div className=""></div>
+                    </div>
                 </div>
-                <div className="hidden"></div>
             </nav>
         </div>
     );

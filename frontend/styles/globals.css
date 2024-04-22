@@ -14,7 +14,7 @@
 
 /* navbar toogle button */
 .nav-toggle {
-    @apply w-10 h-10 border border-secondary rounded flex justify-center items-center p-1;
+    @apply w-10 h-10 relative z-5 border border-secondary rounded flex justify-center items-center p-1;
 }
 
 .nav-toggle span {
