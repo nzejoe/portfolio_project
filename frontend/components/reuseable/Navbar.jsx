@@ -35,7 +35,7 @@ const Navbar = () => {
                         <span className=""></span>
                     </button>
                     <div
-                        className={`fixed w-full h-full transition-all top-0 ${
+                        className={`fixed w-full h-full transition-all top-0 z-5 ${
                             toggle ? "right-0" : "-right-full"
                         } flex  flex-col justify-center items-center bg-primary xl:flex-row xl:static xl:justify-between xl:h-max xl:bg-inherit xl:max`}
                     >
