@@ -16,6 +16,9 @@
     .button-regular {
         @apply rounded px-2 py-1 text-xs font-semibold xl:text-sm hover:opacity-80;
     }
+    .button-sm {
+        @apply rounded-xv py-1 px-2 text-xs font-semibold xl:text-sm hover:opacity-80;
+    }
     .button-outline {
         @apply transition-all duration-300 hover:opacity-100;
     }
