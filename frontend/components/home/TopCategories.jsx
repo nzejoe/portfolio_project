@@ -1,5 +1,6 @@
 import React from "react";
 import { useQuery } from "@tanstack/react-query";
+import axios from "axios";
 
 const TopCategories = () => {
     const fetchData = () => {
@@ -14,7 +15,7 @@ const TopCategories = () => {
 
     console.log("data :>> ", data);
 
-    return <div>TopCategories</div>;
+    return <div>{isLoading ? "Loading" : "TopCategories"}</div>;
 };
 
 export default TopCategories;
