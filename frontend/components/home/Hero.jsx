@@ -1,7 +1,6 @@
 import React, { useState, useRef } from "react";
 import { useInterval } from "@/hooks/useInterval";
 import { heroImageData } from "@/data";
-import TopCategories from "./TopCategories";
 
 const Hero = () => {
     const [index, setIndex] = useState(0);
@@ -33,7 +32,6 @@ const Hero = () => {
                     </div>
                 ))}
             </div>
-            <TopCategories />
         </div>
     );
 };
