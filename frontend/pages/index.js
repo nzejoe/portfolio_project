@@ -4,6 +4,7 @@ import Hero from "@/components/home/Hero";
 import TopCategories from "@/components/home/TopCategories";
 import TopSelling from "@/components/home/TopSelling";
 import PromoOffer from "@/components/home/PromoOffer";
+import OurServices from "@/components/home/OurServices";
 
 export default function Home() {
     return (
@@ -12,6 +13,7 @@ export default function Home() {
             <TopCategories />
             <TopSelling />
             <PromoOffer />
+            <OurServices />
         </main>
     );
 }

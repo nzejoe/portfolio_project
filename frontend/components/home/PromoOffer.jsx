@@ -2,7 +2,7 @@ import React from "react";
 
 const PromoOffer = () => {
     return (
-        <div className="bg-primary/20">
+        <div className="bg-primary/20 py-10">
             <section className={`section text-center`}>
                 <div className="">
                     <div className={""}>
