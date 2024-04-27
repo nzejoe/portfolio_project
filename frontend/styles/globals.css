@@ -28,6 +28,10 @@
     .section-title {
         @apply text-2xl font-bold uppercase mb-10 xl:text-4xl xl:mb-20;
     }
+
+    input {
+        @apply focus:outline-none focus:border-none;
+    }
 }
 
 /* navbar toogle button */

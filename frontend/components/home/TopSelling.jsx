@@ -18,7 +18,7 @@ const TopSelling = () => {
     const topProducts = isSuccess ? data.data : Array.from({ length: 6 }).map((_, idx) => ({ id: idx }));
 
     return (
-        <section className="section h-[18rem] md:h-[30rem] xl:h-[45rem]">
+        <section className="section ">
             <h1 className="section-title">Best sellers</h1>
             <div className={"grid grid-cols-2 gap-5 text-center md:grid-cols-3 mb-10"}>
                 {topProducts.map((product) => {
