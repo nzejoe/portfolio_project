@@ -10,6 +10,15 @@
     .text-balance {
         text-wrap: balance;
     }
+    .button-lg {
+        @apply rounded px-5 py-3 text-xs font-semibold xl:px-6 xl:py-4 xl:text-sm hover:opacity-80;
+    }
+    .button-regular {
+        @apply rounded px-2 py-1 text-xs font-semibold xl:text-sm hover:opacity-80;
+    }
+    .button-outline {
+        @apply transition-all duration-300 hover:opacity-100;
+    }
 }
 
 /* navbar toogle button */

@@ -22,11 +22,7 @@ const Hero = () => {
                             <h3 className={"text-sm font-bold md:text-base xl:text-4xl"}>{item.header}</h3>
                             <p className={"text-xxs-2 mb-2 md:text-xs xl:text-base"}>{item.text}</p>
                             <div className={""}>
-                                <button
-                                    className={`bg-primary text-white rounded px-5 py-3 text-xs font-semibold xl:px-6 xl:py-4 xl:text-sm`}
-                                >
-                                    {item.link}
-                                </button>
+                                <button className={`button-lg bg-primary text-white`}>{item.link}</button>
                             </div>
                         </div>
                     </div>

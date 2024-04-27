@@ -45,7 +45,7 @@ const TopCategories = () => {
                                             ></img>
                                             <div className={"absolute top-1/2 px-5"}>
                                                 <h2 className="font-semibold mb-2">{category.name}</h2>
-                                                <button className="border border-primary text-primary bg-white rounded px-2 py-1 font-medium hover:bg-primary hover:text-white">
+                                                <button className="button-regular button-outline border border-primary text-primary bg-white hover:bg-primary hover:text-white">
                                                     shop now
                                                 </button>
                                             </div>
