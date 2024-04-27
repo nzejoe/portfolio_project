@@ -12,7 +12,7 @@ const Hero = () => {
     useInterval(slideHandler, 5000);
 
     return (
-        <div className="max-w-next-max mx-auto h-[18rem] md:h-[30rem] xl:h-[45rem]">
+        <div className="section h-[18rem] md:h-[30rem] xl:h-[45rem]">
             <div className="w-full flex slide-viewer">
                 {heroImageData.map((item, idx) => (
                     <div className={`relative slide  ${index === idx ? "slide-active" : ""}`} key={idx}>

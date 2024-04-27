@@ -19,6 +19,12 @@
     .button-outline {
         @apply transition-all duration-300 hover:opacity-100;
     }
+    .section {
+        @apply max-w-next-max mx-auto px-5 py-10;
+    }
+    .section-title {
+        @apply text-2xl font-bold uppercase mb-10 xl:text-4xl xl:mb-20;
+    }
 }
 
 /* navbar toogle button */
