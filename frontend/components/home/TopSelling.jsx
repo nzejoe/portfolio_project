@@ -20,7 +20,7 @@ const TopSelling = () => {
     return (
         <section className="section h-[18rem] md:h-[30rem] xl:h-[45rem]">
             <h1 className="section-title">Best sellers</h1>
-            <div className={"grid grid-cols-2 gap-5 text-center md:grid-cols-3"}>
+            <div className={"grid grid-cols-2 gap-5 text-center md:grid-cols-3 mb-10"}>
                 {topProducts.map((product) => {
                     return (
                         <Fragment key={product.id}>
@@ -62,6 +62,11 @@ const TopSelling = () => {
                         </Fragment>
                     ); // set it to grid view
                 })}
+            </div>
+            <div className="text-center">
+                <button className="button-lg button-outline border border-primary text-primary hover:bg-primary hover:text-white">
+                    View More
+                </button>
             </div>
         </section>
     );
